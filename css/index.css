@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    background-image: url('./../assets/bilder/depositphotos_95484388-stock-illustration-seamless-vector-pattern-with-cute.jpg');
+    background-repeat: repeat;
+    width: 100vw;
+    height: 23vh;
+}
+
+main {
+    background-color: blue;
+    width: 100vw;
+}
+
+#section1 {
+    background-color: beige;
+}
+
+#section2 {
+    background-color: beige;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+@media screen and (min-width:768px){
+    .container{
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    aside {
+        position: fixed;
+        background-image: url('./../assets/bilder/depositphotos_95484388-stock-illustration-seamless-vector-pattern-with-cute.jpg');
+        background-repeat: repeat;
+        width: 10vw;
+        height: 100vh;
+    
+    }
+
+
+
+    .container aside:last-child {
+        position: fixed; 
+        right: 0;
+    }
+    
+    main { 
+        background-color: beige;
+        margin-left: 10vw;
+        width: 80vw;
+        height: 100vh;
+    }
+#span2{
+    color: blue;
+}
+}
